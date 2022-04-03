@@ -9,6 +9,9 @@
   color: #333;
   line-height: 2; 
 }
+.ui .cards {
+  margin-bottom: 5px;
+}
 
 .ui.cards > .card > .image {
   height: 250px;
