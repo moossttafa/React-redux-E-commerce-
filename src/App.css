@@ -50,6 +50,7 @@
 
 .ui.grid.container {
   margin-top: 45px;
+  margin-bottom: 20px;
 }
 
 .ui.grid > .row {
