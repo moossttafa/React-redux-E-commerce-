@@ -5,7 +5,7 @@ export const fetchProducts = () => async (dispatch) => {
   try{
     const response = await axios
     .get(`https://fakestoreapi.com/products`)
-    console.log(response.data);
+    console.log("wwwwwwwwwww",response.data);
     dispatch ({
       type: Types.FETCH_PRODUCTS,
       payload: response.data,
@@ -13,21 +13,15 @@ export const fetchProducts = () => async (dispatch) => {
   } catch(err){
     console.log("Err: ", err);
   };
-};
+}; 
 
-// export const setProducts = (products) => {
-//   return{
-//     type : Types.SET_PRODUCTS,
-//     payload : products,
+
+// export const selectedProduct = (product) => {
+//   return {
+//     type: Types.SELECTED_PRODUCT,
+//     payload: product,
 //   };
 // };
-
-export const selectedProduct = (product) => {
-  return {
-    type: Types.SELECTED_PRODUCT,
-    payload: product,
-  };
-};
 
 export const removeSelectedProduct = () => {
   return {
