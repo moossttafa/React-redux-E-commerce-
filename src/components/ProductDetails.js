@@ -22,7 +22,6 @@ const ProductDetails = () => {
   }, [dispatch , productId]);
   
   console.log("productttttttttttttz",productId);
-  
   // const { image, title, price, category, description } = product;
   return (
     <div className="ui grid container">
