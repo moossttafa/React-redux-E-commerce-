@@ -178,8 +178,7 @@ nav {
 .links a:hover {
   background: #DDD;
   color: #333;
-  font-weight: 500;
-  /* color: var(--clr-primary-5); */
+  font-weight: 500; 
   padding-left: 1.5rem;
 }
 .social-icons {
