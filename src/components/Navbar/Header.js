@@ -41,7 +41,7 @@ const Header = () => {
               )
             })}
           </ul>
-          <NavLink to="/cart" className="btn btn-outline-primary ms-5">
+          <NavLink to="/cart" className="btn btn-header ms-5">
               <span className="fa fa-shopping-cart me-1"></span> Cart
           </NavLink>
           </div> 

@@ -1,28 +1,35 @@
-import React, { useEffect } from 'react' 
-// import { useParams } from 'react-router-dom'
+import React, { useEffect } from 'react'  
 import { useDispatch, useSelector } from 'react-redux'; 
-import { useParams } from 'react-router-dom';
-import { selectedProductActions } from '../redux/actions/selectProductActions';
+import { selectedProductActions } from '../redux/actions/productActions';
+// import { useParams } from 'react-router-dom';
 
 const ProductDetails = () => {
-  const { id } = useParams();
-  const product = useSelector((state) => state.allProducts.product);
 
-  // const { image, title, price, category, description } = product;
+  // const { id } = useParams();
+  // console.log("idddddddddd",id);
+  const productId = window.location.pathname.replace("/", "").split("/")[1]; 
+
+  console.log( window.location);
+  console.log(window.location.pathname);
+  console.log(window.location.pathname.replace("/", ""));
+
+  const product = useSelector((state) => state.allProducts.product); 
 
   const dispatch = useDispatch();  
-
+  
   useEffect(() => {
-    dispatch(selectedProductActions(id))
-   }, [dispatch , id]);
-  console.log("productttttttttttttz",product);
-
+    dispatch(selectedProductActions(productId))
+  }, [dispatch , productId]);
+  
+  console.log("productttttttttttttz",productId);
+  
+  // const { image, title, price, category, description } = product;
   return (
     <div className="ui grid container">
       {Object.keys(product).length === 0 ? (
         <div>...Loading</div>
       ) : (
-        <div className="ui placeholder segment">
+        <div className="ui segment">
           <div className="ui two column stackable center aligned grid">
             <div className="ui vertical divider">AND</div>
             <div className="middle aligned row">

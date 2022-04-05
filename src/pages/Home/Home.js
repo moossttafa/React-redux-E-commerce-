@@ -15,7 +15,7 @@ const Home = () => {
           return (
             <Carousel.Item key={banner.id}>
               <img 
-                className="d-block w-100"
+                className="img-bg d-block w-100"
                 src={banner.img} 
                 alt={banner.title}
                 />

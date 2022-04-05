@@ -1,5 +1,6 @@
 .featured-products{
   padding: 5rem 0px;
+  background: #fffdfc;
 }
 .title{
   text-align: center;
@@ -16,10 +17,19 @@
   width: 148px;
   margin: 0px auto;
   text-align: center;
-  background: #2664ab;
+  background: #ba8646;
   color: #FFF;
   padding: 10px;
 }
 .btn-product:hover{
   color: #DDD;
+}
+.img-bg{
+  height: 600px;
+  object-fit: cover;
+
+}
+.btn-header{
+  color: #c19041;
+  border-color: #c7ab92;
 }

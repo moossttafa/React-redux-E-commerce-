@@ -15,14 +15,20 @@ export const fetchProducts = () => async (dispatch) => {
   };
 }; 
 
-
-// export const selectedProduct = (product) => {
-//   return {
-//     type: Types.SELECTED_PRODUCT,
-//     payload: product,
-//   };
-// };
-
+export const selectedProductActions = (id) => async (dispatch) => {
+  try{
+    const response = await axios
+    .get(`https://fakestoreapi.com/products/${id}`);
+    console.log("ssssssssssssss",response.data);
+    dispatch ({
+      type: Types.SELECTED_PRODUCT,
+      payload: response.data,
+    });
+  } catch(err){
+    console.log("Err: ", err);
+  };
+} 
+  
 export const removeSelectedProduct = () => {
   return {
     type: Types.REMOVE_SELECTED_PRODUCT,

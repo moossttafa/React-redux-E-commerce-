@@ -4,12 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #2664ab;
+    background: #4e4946;
     text-align: center; 
     margin-top: 20px;
   }
 span {
-  color: var(--clr-primary-5);
+  color: #d39e41;
 }
 h5 {
   color: var(--clr-white);

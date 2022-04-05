@@ -6,8 +6,8 @@
 .logo{ 
   font-size: 20px;
   font-weight: 600;
-  color: #333;
-  line-height: 2; 
+  color:#d39e41;
+  line-height: 2;  
 }
 .ui .cards {
   margin-bottom: 5px;
@@ -100,4 +100,7 @@
   color: #fff;
   font-size: 18px;
   margin-left: 0;
+}
+a:hover{
+  color: #333;
 }

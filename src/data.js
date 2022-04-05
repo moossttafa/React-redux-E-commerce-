@@ -1,8 +1,8 @@
 // import React from 'react'
 // import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa' 
-import bannerImage2 from "./assets/images/home/img2.jpg";
-import bannerImage3 from "./assets/images/home/img3.jpg";
-import bannerImage4 from "./assets/images/home/img4.jpg";
+import bannerImage2 from "./assets/images/home/img1.jpg";
+import bannerImage3 from "./assets/images/home/img2.jpg";
+import bannerImage4 from "./assets/images/home/img3.jpg";
  
 
 export const links = [
