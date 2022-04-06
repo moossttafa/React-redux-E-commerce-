@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router , Switch , Route} from "react-router-dom"
 import Header from './components/Navbar/Header';
 import './App.css';
-import ProductListing from './components/ProductListing';
+import Product from './Pages/product/Product';
 import ProductDetails from './components/ProductDetails';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
@@ -20,7 +20,7 @@ function App() {
          <Route path="/" exact component={Home} /> 
           <Route path="/about" component={About} />
           <Route path="/product/:productId" component={ProductDetails} />
-          <Route path="/product" component={ProductListing} />
+          <Route path="/product" component={Product} />
           <Route path="/contact" component={Contact} />
           <Route path="*">
             <NotFound />

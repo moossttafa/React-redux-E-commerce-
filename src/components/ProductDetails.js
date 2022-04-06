@@ -5,13 +5,12 @@ import { selectedProductActions } from '../redux/actions/productActions';
 
 const ProductDetails = () => {
 
-  // const { id } = useParams();
-  // console.log("idddddddddd",id);
+  // const { id } = useParams(); 
   const productId = window.location.pathname.replace("/", "").split("/")[1]; 
 
-  console.log( window.location);
-  console.log(window.location.pathname);
-  console.log(window.location.pathname.replace("/", ""));
+  // console.log( window.location);
+  // console.log(window.location.pathname);
+  // console.log(window.location.pathname.replace("/", ""));
 
   const product = useSelector((state) => state.allProducts.product); 
 
@@ -21,8 +20,6 @@ const ProductDetails = () => {
     dispatch(selectedProductActions(productId))
   }, [dispatch , productId]);
   
-  console.log("productttttttttttttz",productId);
-  // const { image, title, price, category, description } = product;
   return (
     <div className="ui grid container">
       {Object.keys(product).length === 0 ? (
