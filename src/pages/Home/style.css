@@ -37,6 +37,11 @@
   color: #c19041;
   border-color: #c7ab92;
 }
+.btn-header:hover{
+  color: #FFF;
+  border-color: #c19041;
+  background-color:#c19041;
+}
 /* New */
 .home-product{
   padding: 20px 0;

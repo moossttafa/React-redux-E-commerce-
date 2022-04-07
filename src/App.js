@@ -9,6 +9,7 @@ import Contact from './Pages/Contact';
 import Home from './Pages/Home/Home';  
 import Footer from "./components/Footer/Footer"
 import NotFound from "./Pages/NotFound/NotFound"
+import Cart from './Pages/Cart/Cart';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/product/:productId" component={ProductDetails} />
           <Route path="/product" component={Product} />
           <Route path="/contact" component={Contact} />
+          <Route path="/cart" component={Cart} />
           <Route path="*">
             <NotFound />
             </Route>

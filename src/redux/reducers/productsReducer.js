@@ -3,6 +3,7 @@ import { Types } from "../constants/types";
 const initialState = {
   products : [],
   product: {},
+  category: [],
 }
 
 export const productsReducer = (state = initialState , action) => {
@@ -14,6 +15,12 @@ export const productsReducer = (state = initialState , action) => {
       case Types.SELECTED_PRODUCT:
       return { ...state ,
         product : action.payload 
+      };
+      case Types.FILTER_CATEGORY:
+      return {
+        ...state,
+        filteredItems: action.payload,
+        category: action.category,
       };
     default: 
       return state;

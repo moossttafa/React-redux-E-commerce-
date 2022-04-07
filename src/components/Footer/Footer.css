@@ -7,6 +7,9 @@
     background: #4e4946;
     text-align: center; 
     margin-top: 20px;
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0; 
   }
 span {
   color: #d39e41;
