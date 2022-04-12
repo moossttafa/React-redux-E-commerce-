@@ -39,6 +39,7 @@ export const getCategories = () => async (dispatch) => {
     const response = await axios.get(
       "https://fakestoreapi.com/products/categories"
       ); 
+      console.log("category",response.data);
     dispatch({
       type: Types.FETCH_CATEGORIES,
       payload: response.data,

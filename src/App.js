@@ -4,7 +4,7 @@ import Header from './components/Navbar/Header';
 import './App.css';
 import Product from './Pages/product/Product';
 import ProductDetails from './components/ProductDetails';
-import About from './Pages/About';
+import About from './Pages/About/About';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home/Home';  
 import Footer from "./components/Footer/Footer"

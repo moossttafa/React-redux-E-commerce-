@@ -29,7 +29,7 @@ const Contact = () => {
                 <label for="exampleFormControlTextarea1" className="form-label">Example textarea</label>
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
               </div>
-              <button type="submit" className="btn btn-outline-primary">Send Message</button>
+              <button type="submit" className="btn btn-header ">Send Message</button>
             </form>
           </div>
         </div>
