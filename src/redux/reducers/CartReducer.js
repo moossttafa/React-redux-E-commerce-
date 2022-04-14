@@ -5,10 +5,14 @@ const initialState = {
 };
 const CartReducer = (state = initialState, action) => {
   switch (action.types){
-    case Types.ADD_CART:
-      return { ...state.cartItems, cartItems: action.payload.cartItems };
-    default:
+    case Types.ADD_TO_CART:
+      console.log(state ,"state");
+      return { 
+        ...state.cartItems,
+         cartItems: [...state.cartItems , action.payload.cartItems] 
+        }; 
+    default: 
       return state;
-  }
+  } 
 }
 export default CartReducer; 

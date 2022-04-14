@@ -27,24 +27,24 @@ const ProductComponent = () => {
    
   useEffect(() => {
    dispatch(fetchProducts())
-  }, []);
+  }, [dispatch]);
 
     return (
       <Fragment> 
         <div className='row'> 
-        {products.map((products ,id) =>  
+        {products.map((product ,id) =>  
           <div className='col-lg-3 col-md-4 col-sm-6'  key={id}>
           <div className='card'>
               <Link to={`/product/${id}`}> 
                 <div className='image'>
-                  <img src={products.image} alt={products.title} />
+                  <img src={product.image} alt={product.title} />
                 </div>
               </Link> 
               <div className='content'>
-                <div className='header'>{products.title}</div>
-                <div className=' price'>{products.price}</div>
-                <div className='category'>{products.category}</div>
-                <AddCardButton />
+                <div className='header'>{product.title}</div>
+                <div className=' price'>{product.price}</div>
+                <div className='category'>{product.category}</div>
+                <AddCardButton productsData={product} />
               </div>
             </div> 
           </div>
